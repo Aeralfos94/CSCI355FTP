@@ -1,6 +1,7 @@
 __author__ = 'Dave Schreck'
 
 import tkinter
+import ftplib
 from ftplib import FTP
 from tkinter import *
 from tkinter import ttk
@@ -8,11 +9,14 @@ from tkinter import messagebox
 
 def login(*args):
     if len(server.get()) != 0 and len(username.get()) != 0 and len(password.get()) != 0:
-        ftp = FTP(server.get())
-        ftp.login(username.get(), password.get())
-        print(ftp.getwelcome())
+        try:
+            ftp = FTP(server.get())
+            ftp.login(username.get(), password.get())
+            print(ftp.getwelcome())
+        except ftplib.all_errors:
+            messagebox.showerror("Login Failed", "Incorrect login credentials.")
     else:
-        messagebox.showerror("Login Failed", "Incorrect login credentials.", )
+        messagebox.showerror("Login Failed", "Make sure to enter in a server, username, and password." )
 
 
 #GUI CODE
