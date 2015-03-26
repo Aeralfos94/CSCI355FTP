@@ -19,49 +19,9 @@ def login(*args):
         except ftplib.all_errors:
             messagebox.showerror("Login Failed", "Incorrect login credentials.")
     else:
-        messagebox.showerror("Login Failed", "Make sure to enter in a server, username, and password.")
+         messagebox.showerror("Login Failed", "Make sure to enter in a server, username, and password.")
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-def mainGUI():
-    root.withdraw()
-
-    new = Toplevel()
-    new.title('Main GUI')
-
-    mainframe = ttk.Frame(new, padding='3 3 12 12')
-    mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-    mainframe.columnconfigure(0, weight=1)
-    mainframe.rowconfigure(0, weight=1)
-
-    menubar = Menu(new)
-    filemenu = Menu(menubar, tearoff=0)
-    filemenu.add_command(label="Login", command=lambda: showLoginWin(new))
-    filemenu.entryconfig(0, state=DISABLED)
-    filemenu.add_command(label="Disconnect", command=lambda: logout(filemenu))
-    menubar.add_cascade(label="File", menu=filemenu)
-
-    new.config(menu=menubar)
-
-def showLoginWin(new):
-    new.destroy()
-    root.deiconify()
-
-def logout(filemenu):
-    ftp.quit()
-    if filemenu.entrycget(1, "state")=="normal":
-        filemenu.entryconfig(1, state=DISABLED)
-        filemenu.entryconfig(0, state=NORMAL)
-    else:
-        filemenu.entryconfig(1, state=NORMAL)
-        filemenu.entryconfig(0, state=DISABLED)
-
-=======
-#GUI CODE
-root = Tk()
-root.title("Login To Server")
-=======
 def winLogin():
     mainframe = ttk.Frame(root, padding="3 3 12 12")
     mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
@@ -106,7 +66,6 @@ def winLogin():
 
     root.mainloop()
 
->>>>>>> 76ce5d452f9af6f5e78b5edaea3a19c7affdeb08
 
 def mainGUI():
     root.withdraw()
@@ -140,15 +99,7 @@ def mainGUI():
 
     menubar.add_cascade(label="Connect", menu=connectmenu)
 
-<<<<<<< HEAD
-# Gives server_entry the blinking cursor
-server_entry.focus()
-# Binds the "Enter" key to the login method
-root.bind('<Return>', login)
->>>>>>> origin/master
-=======
     new.config(menu=menubar)
->>>>>>> 76ce5d452f9af6f5e78b5edaea3a19c7affdeb08
 
 def showLoginWin(new):
     new.destroy()
