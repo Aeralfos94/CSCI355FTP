@@ -18,6 +18,7 @@
   <component name="CoverageDataManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/CSCI355FTP$Test.coverage" NAME="Test Coverage Results" MODIFIED="1427261069491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
 =======
     <SUITE FILE_PATH="coverage/CSCI355FTP$Test.coverage" NAME="Test Coverage Results" MODIFIED="1426792005812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,6 +26,9 @@
 =======
     <SUITE FILE_PATH="coverage/CSCI355FTP$Test.coverage" NAME="Test Coverage Results" MODIFIED="1427262490337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
 >>>>>>> 76ce5d452f9af6f5e78b5edaea3a19c7affdeb08
+=======
+    <SUITE FILE_PATH="coverage/CSCI355FTP$Test.coverage" NAME="Test Coverage Results" MODIFIED="1427261069491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> parent of aae2062... Added File in the menu
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -43,6 +47,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.17621145" vertical-offset="1263" max-vertical-offset="1887">
               <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
 =======
@@ -53,6 +58,10 @@
             <state vertical-scroll-proportion="0.6255507" vertical-offset="1518" max-vertical-offset="2533">
               <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
 >>>>>>> 76ce5d452f9af6f5e78b5edaea3a19c7affdeb08
+=======
+            <state vertical-scroll-proportion="0.17621145" vertical-offset="1263" max-vertical-offset="1887">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+>>>>>>> parent of aae2062... Added File in the menu
               <folding>
                 <element signature="e#29#43#0" expanded="true" />
               </folding>
@@ -559,9 +568,14 @@
 =======
     <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.6255507" vertical-offset="1518" max-vertical-offset="2533">
           <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
 >>>>>>> 76ce5d452f9af6f5e78b5edaea3a19c7affdeb08
+=======
+        <state vertical-scroll-proportion="0.17621145" vertical-offset="1263" max-vertical-offset="1887">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+>>>>>>> parent of aae2062... Added File in the menu
           <folding>
             <element signature="e#29#43#0" expanded="true" />
           </folding>

@@ -112,7 +112,7 @@ def mainGUI():
     root.withdraw()
 
     new = Toplevel()
-    new.title(server.get())
+    new.title('Main GUI')
 
     mainframe = ttk.Frame(new, padding='3 3 12 12')
     mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
@@ -120,19 +120,13 @@ def mainGUI():
     mainframe.rowconfigure(0, weight=1)
 
     menubar = Menu(new)
-
     filemenu = Menu(menubar, tearoff=0)
-    filemenu.add_command(label="Add Directory", command=addDir)
-    filemenu.add_command(label="Delete Directory", command=delDir)
-    filemenu.add_command(label="Browse Files", command=browse)
-    filemenu.add_command(label="Delete File", command=deleteFile)
-    filemenu.add_command(label="Change File Permissions", command=changeFilePerm)
-    filemenu.add_command(label="Upload", command=upload)
-    filemenu.add_command(label="Download", command=download)
-    filemenu.add_command(label="Real-time File Transfer", command=realTime)
-
+    filemenu.add_command(label="Login", command=lambda: showLoginWin(new))
+    filemenu.entryconfig(0, state=DISABLED)
+    filemenu.add_command(label="Disconnect", command=lambda: logout(filemenu))
     menubar.add_cascade(label="File", menu=filemenu)
 
+<<<<<<< HEAD
     connectmenu = Menu(menubar, tearoff=0)
     connectmenu.add_command(label="Login", command=lambda: showLoginWin(new))
     connectmenu.entryconfig(0, state=DISABLED)
@@ -147,6 +141,8 @@ server_entry.focus()
 root.bind('<Return>', login)
 >>>>>>> origin/master
 =======
+=======
+>>>>>>> parent of aae2062... Added File in the menu
     new.config(menu=menubar)
 >>>>>>> 76ce5d452f9af6f5e78b5edaea3a19c7affdeb08
 
@@ -154,39 +150,15 @@ def showLoginWin(new):
     new.destroy()
     root.deiconify()
 
-def logout(connectmenu):
+def logout(filemenu):
     ftp.quit()
-    if connectmenu.entrycget(1, "state")=="normal":
-        connectmenu.entryconfig(1, state=DISABLED)
-        connectmenu.entryconfig(0, state=NORMAL)
+    if filemenu.entrycget(1, "state")=="normal":
+        filemenu.entryconfig(1, state=DISABLED)
+        filemenu.entryconfig(0, state=NORMAL)
     else:
-        connectmenu.entryconfig(1, state=NORMAL)
-        connectmenu.entryconfig(0, state=DISABLED)
+        filemenu.entryconfig(1, state=NORMAL)
+        filemenu.entryconfig(0, state=DISABLED)
 
-
-def addDir():
-    print("addDir")
-
-def delDir():
-    print("delDir")
-
-def changeFilePerm():
-    print("changeFilePerm")
-
-def browse():
-    print("browse")
-
-def deleteFile():
-    print("deleteFile")
-
-def upload():
-    print("upload")
-
-def download():
-    print("download")
-
-def realTime():
-    print("realTime")
 
 root = Tk()
 winLogin()
