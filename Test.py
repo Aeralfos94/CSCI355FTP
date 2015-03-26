@@ -139,5 +139,11 @@ def download():
 def realTime():
     print("realTime")
 
+def addDir():
+    ftp.mkd("directory") #TODO: request user for input (type in dialogue box)
+
+def delDir():
+    ftp.rmd("directory") #TODO: request user for input (click from list?)
+
 root = Tk()
 winLogin()
