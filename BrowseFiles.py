@@ -6,7 +6,7 @@ from ftplib import FTP
 
 #Display Interactive List
 def Display(directory):
-
+    FTP.dir(directory)
 
 #Upon selecting file object
 def SelectFile(file):
